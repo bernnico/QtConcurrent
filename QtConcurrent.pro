@@ -18,9 +18,11 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
+
+OPENVC_LIB_PATH_WIN32 = "D:/lib/opencv/opencv.pri"
+
 win32: {
-    # include("c:/dev/opencv/opencv.pri")
-    include("C:/lib/opencv/opencv.pri")
+    include($${OPENVC_LIB_PATH_WIN32})
 }
 
 unix: !macx{
